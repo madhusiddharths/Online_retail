@@ -17,8 +17,8 @@ The pipeline performs the following steps:
 
 ```mermaid
 graph LR
-    A[Snowflake\n(Raw Data)] -->|Extract| B(clean_data.py\nPolars Transformation)
-    B -->|Fact & Dim Tables| C[BigQuery\n(Analytics Data)]
+    A["Snowflake\n(Raw Data)"] -->|Extract| B("clean_data.py\nPolars Transformation")
+    B -->|Fact & Dim Tables| C["BigQuery\n(Analytics Data)"]
     
     subgraph Data Modeling
     B --> D[fact_sales]
